@@ -1,0 +1,10 @@
+.toolbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    gap: 40px;
+    background-color: #373F68;
+    border-radius: 10px;
+}

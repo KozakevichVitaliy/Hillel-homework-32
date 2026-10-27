@@ -1,0 +1,44 @@
+.roadmap {
+    &__toolbar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__tasks {
+        margin-top: 15x;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 10px;
+    }
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+
+    &__title-primary{
+        font-size: 18px;
+        font-weight: 800;
+        color: #3A4374;
+    }
+
+    &__title-secondary {
+        font-size: 18px;
+        font-weight: 400;
+        color: #647196;
+        
+    }
+
+    &-list {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

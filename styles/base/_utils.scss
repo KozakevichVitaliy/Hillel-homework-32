@@ -1,0 +1,40 @@
+.hide-tablet {
+    display: block;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.form-container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.goback {
+    display: block;
+    font-weight: 700;
+    color: #647196;
+    text-decoration: none;
+
+    &--white {
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.progress {
+    background-color: #F49F85;
+}
+
+.planned {
+    background-color: #AD1FEA;
+}
+
+.live {
+    background-color: #62BCFA;
+}

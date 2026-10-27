@@ -1,0 +1,77 @@
+.form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 75px;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @media (max-width: 440px) {
+        padding: 50px 20px;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-style: 24px;
+        color: #3A4374;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+
+        &-primary {
+            color: #3A4374;
+            font-weight: 800;
+            font-size: 14px;
+        }
+
+        &-secondary {
+            color: #647196;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+
+        @media (max-width: 440px) {
+            flex-direction: column;
+        }
+
+        &-delete {
+            background-color: #D73737;
+            margin-right: auto;
+
+            &:hover {
+                background-color: #E98888;
+            }
+
+            @media (max-width: 440px) {
+                margin-right: 0;
+            }
+        }
+
+        &-cancel {
+            background-color: #3A4374;
+
+            &:hover {
+                background-color: #656EA3;
+            }
+        }
+
+        &-add {
+            background-color: #AD1FEA;
+
+            &:hover {
+                background-color: #C75AF6;
+            }
+        }
+    }
+}

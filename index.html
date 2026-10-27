@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <title>Frontend Mentor | Product feedback app</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="roadmap">
+      <div class="toolbar roadmap__toolbar">
+        <div class="toolbar__title">
+          <a href="#" class="goback goback--white">
+            <svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="detail__back-icon">
+              <path d="M4 8.70703L0 4.70703L4 0.707031" stroke-width="2" stroke="white"/>
+            </svg>
+            Go Back
+          </a>
+          <h2 class="toolbar__title-text">Roadmap</h2>
+        </div>
+        <button class="toolbar__button">
+          + Add Feedback
+        </button>
+      </div>
+      <main class="roadmap__tasks">
+        <div class="tasks">
+          <h3 class="tasks__title-primary">Planned (2)</span>
+          <h4 class="tasks__title-secondary">Ideas prioritized for research</span>
+          <ul class="tasks-list">
+            <li class="card task-card">
+              <div class="card__marker planned"></div>
+              <div class="card__content">
+                <div>
+                  <span class="card__dot dot planned"></span>
+                  <span class="card__marker-title">Planned</span>
+                </div>
+                <h5 class="card__title">More comprehensive reports</h5>
+                <p class="card__text">It would be great to see a more detailed breakdown of solutions.</p>
+                <button class="card__tag tag">
+                  Enhancement
+                </button>
+                <div class="card__bottom">
+                  <button class="card__tag tag">
+                    <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 5.41422L4 1.41422L8 5.41422" stroke-width="2" stroke="#4661E6"/>
+                    </svg>
+                    <span>123</span>
+                  </button>
+                  <div class="card__comments">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.62074 16H1.34534L2.24718 15.0895C2.73344 14.5986 3.0371 13.9601 3.11873 13.2674C1.03637 11.8878 0 9.88917 0 7.79388C0 3.92832 3.51913 0 9.0305 0C14.8692 0 18 3.61479 18 7.45522C18 11.321 14.8361 14.9333 9.0305 14.9333C8.0135 14.9333 6.95226 14.7963 6.00478 14.5448C5.10787 15.4735 3.89262 16 2.62074 16Z" fill="#CDD2EE"/>
+                    </svg>
+                    <span class="card__comments-number">2</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card task-card">
+              <div class="card__marker planned"></div>
+              <div class="card__content">
+                <div>
+                  <span class="card__dot dot planned"></span>
+                  <span class="card__marker-title">Planned</span>
+                </div>
+                <h5 class="card__title">Learning paths</h5>
+                <p class="card__text">Sequenced projects for different goals to help people improve.</p>
+                <button class="card__tag tag">
+                  Feature
+                </button>
+                <div class="card__bottom">
+                  <button class="card__tag tag">
+                    <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 5.41422L4 1.41422L8 5.41422" stroke-width="2" stroke="#4661E6"/>
+                    </svg>
+                    <span>28</span>
+                  </button>
+                <div class="card__comments">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.62074 16H1.34534L2.24718 15.0895C2.73344 14.5986 3.0371 13.9601 3.11873 13.2674C1.03637 11.8878 0 9.88917 0 7.79388C0 3.92832 3.51913 0 9.0305 0C14.8692 0 18 3.61479 18 7.45522C18 11.321 14.8361 14.9333 9.0305 14.9333C8.0135 14.9333 6.95226 14.7963 6.00478 14.5448C5.10787 15.4735 3.89262 16 2.62074 16Z" fill="#CDD2EE"/>
+                    </svg>
+                    <span class="card__comments-number">1</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tasks">
+          <h3 class="tasks__title-primary">In-Progress (3)</h3>
+          <h4 class="tasks__title-secondary">Currently being developed</h4>
+          <ul class="tasks-list">
+            <li class="card task-card">
+              <div class="card__marker progress"></div>
+              <div class="card__content">
+                <div>
+                  <span class="card__dot dot progress"></span>
+                  <span class="card__marker-title">In Progress</span>
+                </div>
+                <h5 class="card__title">One-click portfolio generation</h5>
+                <p class="card__text">Add ability to create professional looking portfolio from profile.</p>
+                <button class="card__tag tag">
+                  Feature
+                </button>
+                <div class="card__bottom">
+                  <button class="card__tag tag">
+                    <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 5.41422L4 1.41422L8 5.41422" stroke-width="2" stroke="#4661E6"/>
+                    </svg>
+                    <span>62</span>
+                  </button>
+                  <div class="card__comments">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.62074 16H1.34534L2.24718 15.0895C2.73344 14.5986 3.0371 13.9601 3.11873 13.2674C1.03637 11.8878 0 9.88917 0 7.79388C0 3.92832 3.51913 0 9.0305 0C14.8692 0 18 3.61479 18 7.45522C18 11.321 14.8361 14.9333 9.0305 14.9333C8.0135 14.9333 6.95226 14.7963 6.00478 14.5448C5.10787 15.4735 3.89262 16 2.62074 16Z" fill="#CDD2EE"/>
+                    </svg>
+                    <span class="card__comments-number">1</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card task-card">
+              <div class="card__marker progress"></div>
+              <div class="card__content">
+                <div>
+                  <span class="card__dot dot progress"></span>
+                  <span class="card__marker-title">In Progress</span>
+                </div>
+                <h5 class="card__title">Bookmark challenges</h5>
+                <p class="card__text">SBe able to bookmark challenges to take later on.</p>
+                <button class="card__tag tag">
+                  Feature
+                </button>
+                <div class="card__bottom">
+                  <button class="card__tag tag">
+                    <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 5.41422L4 1.41422L8 5.41422" stroke-width="2" stroke="#4661E6"/>
+                    </svg>
+                    <span>31</span>
+                  </button>
+                  <div class="card__comments">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.62074 16H1.34534L2.24718 15.0895C2.73344 14.5986 3.0371 13.9601 3.11873 13.2674C1.03637 11.8878 0 9.88917 0 7.79388C0 3.92832 3.51913 0 9.0305 0C14.8692 0 18 3.61479 18 7.45522C18 11.321 14.8361 14.9333 9.0305 14.9333C8.0135 14.9333 6.95226 14.7963 6.00478 14.5448C5.10787 15.4735 3.89262 16 2.62074 16Z" fill="#CDD2EE"/>
+                    </svg>
+                    <span class="card__comments-number">1</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card task-card">
+              <div class="card__marker progress"></div>
+              <div class="card__content">
+                <div>
+                  <span class="card__dot dot progress"></span>
+                  <span class="card__marker-title">In Progress</span>
+                </div>
+                <h5 class="card__title">Animated solution screenshots</h5>
+                <p class="card__text">Screenshots of solutions with animations don’t display correctly.</p>
+                <button class="card__tag tag">
+                  Bug
+                </button>
+                <div class="card__bottom">
+                  <button class="card__tag tag">
+                    <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 5.41422L4 1.41422L8 5.41422" stroke-width="2" stroke="#4661E6"/>
+                    </svg>
+                    <span>9</span>
+                  </button>
+                  <div class="card__comments">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.62074 16H1.34534L2.24718 15.0895C2.73344 14.5986 3.0371 13.9601 3.11873 13.2674C1.03637 11.8878 0 9.88917 0 7.79388C0 3.92832 3.51913 0 9.0305 0C14.8692 0 18 3.61479 18 7.45522C18 11.321 14.8361 14.9333 9.0305 14.9333C8.0135 14.9333 6.95226 14.7963 6.00478 14.5448C5.10787 15.4735 3.89262 16 2.62074 16Z" fill="#CDD2EE"/>
+                    </svg>
+                    <span class="card__comments-number">0</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tasks">
+          <span class="tasks__title-primary">Live (1)</span>
+          <span class="tasks__title-secondary">Released features</span>
+          <ul class="tasks-list">
+            <li class="card task-card">
+              <div class="card__marker live"></div>
+              <div class="card__content">
+                <div class="card__top">
+                  <span class="card__dot dot live"></span>
+                  <span class="card__marker-title">Live</span>
+                </div>
+                <h5 class="card__title">One-click portfolio generation</h5>
+                <p class="card__text">Add ability to create professional looking portfolio from profile.</p>
+                <button class="card__tag tag">
+                  Feature
+                </button>
+                <div class="card__bottom">
+                  <button class="card__tag tag">
+                    <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 5.41422L4 1.41422L8 5.41422" stroke-width="2" stroke="#4661E6"/>
+                    </svg>
+                    <span>71</span>
+                  </button>
+                  <div class="card__comments">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.62074 16H1.34534L2.24718 15.0895C2.73344 14.5986 3.0371 13.9601 3.11873 13.2674C1.03637 11.8878 0 9.88917 0 7.79388C0 3.92832 3.51913 0 9.0305 0C14.8692 0 18 3.61479 18 7.45522C18 11.321 14.8361 14.9333 9.0305 14.9333C8.0135 14.9333 6.95226 14.7963 6.00478 14.5448C5.10787 15.4735 3.89262 16 2.62074 16Z" fill="#CDD2EE"/>
+                    </svg>
+                    <span class="card__comments-number">2</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+<html

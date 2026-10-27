@@ -1,0 +1,19 @@
+.tag {
+    display: inline-block;
+    color: #4661E6;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #F2F4FF;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 16px;
+    cursor: pointer;
+
+    &--active {
+        background-color: #4661E6;
+        color: #FFFFFF;
+    }
+    &:hover {
+        background-color: #CFD7FF;
+    }
+}

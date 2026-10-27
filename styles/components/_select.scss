@@ -1,0 +1,18 @@
+select {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #F2F4FE;
+    border: none;
+    border-radius: 10px;
+    color: #3A4374;
+    appearance: none;
+    cursor: pointer;
+
+    background-image: url("../../assets/shared/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+
+    &::picker(select) {
+        appearance: base-select;
+    }
+}
