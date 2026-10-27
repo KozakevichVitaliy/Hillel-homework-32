@@ -1,9 +1,11 @@
+@use './variables' as vars;
+
 body {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
     line-height: 1.3;
-    color: #647196;
-    background-color: #F2F2F2;
+    color: vars.$grey-dark;
+    background-color: vars.$grey;
 }
 
 .container {

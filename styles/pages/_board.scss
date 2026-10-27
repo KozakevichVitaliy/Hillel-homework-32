@@ -1,6 +1,10 @@
 @use "../base/variables" as vars;
 
 .board {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 30px;
+
     &__toolbar-button {
         background-color: vars.$purple;
 
@@ -9,35 +13,37 @@
         }
     }
 
-    &__tasks {
-        margin-top: 15x;
+    &__content {
+        padding: 0 10px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: auto 1fr;
         gap: 10px;
     }
-}
 
-.tasks {
-    display: flex;
-    flex-direction: column;
+    & .tasks {
 
-    &__title-primary{
-        font-size: 18px;
-        font-weight: 800;
-        color: #3A4374;
-    }
+        &__title {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 15px;
 
-    &__title-secondary {
-        font-size: 18px;
-        font-weight: 400;
-        color: #647196;
-        
-    }
+            &-primary{
+                font-size: 18px;
+                font-weight: vars.$bold;
+                color: vars.$navy;
+            }
 
-    &-list {
-        margin-top: 25px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+            &-secondary {
+                font-size: 18px;
+                font-weight: vars.$regular;
+                color: vars.$grey-dark;
+            }
+        }
+
+        &__lists {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 15px;
+        }
     }
 }

@@ -16,15 +16,27 @@
 .goback {
     display: block;
     font-weight: 700;
-    color: vars.$grey-dark;
+    color: vars.$grey;
     text-decoration: none;
 
     &--white {
         font-size: 14px;
         color: vars.$white;
     }
-    
+
     &:hover {
         text-decoration: underline;
     }
+}
+
+.planned {
+    background-color: vars.$orange;
+}
+
+.progress {
+    background-color: vars.$purple;
+}
+
+.done {
+    background-color: vars.$blue-light;
 }

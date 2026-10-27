@@ -1,3 +1,5 @@
+@use "../base/variables" as vars;
+
 button {
     padding: 12px 24px;
     border-radius: 10px;
@@ -6,4 +8,28 @@ button {
     font-weight: 700;
     color: #F2F4FE;
     cursor: pointer;
+
+    &.button-delete {
+        background-color: vars.$red;
+
+        &:hover {
+            background-color: vars.$red-hover;
+        }
+    }
+
+    &.button-update {
+        background-color: vars.$green;
+
+        &:hover {
+            background-color: vars.$green-hover;
+        }
+    }
+
+    &.button-cancel {
+        background-color: vars.$navy;
+
+        &:hover {
+            background-color: vars.$navy-hover;
+        }
+    }
 }

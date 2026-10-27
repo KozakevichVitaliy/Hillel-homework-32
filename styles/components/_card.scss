@@ -1,13 +1,8 @@
+@use '../base/variables' as vars;
+
 .card {
     border-radius: 10px;
     background-color: #fff;
-
-    &__content {
-        padding: 30px 20px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
 
     &__marker {
         border-top-left-radius: 10px;
@@ -16,22 +11,30 @@
         height: 6px;
     }
 
+    &__content {
+        padding: 30px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
     &__marker-title {
-        color: #647196;
+        color: vars.$grey-dark;
         font-size: 16px;
         font-weight: 400;
     }
 
     &__title {
-        color: #3A4374;
+        color: vars.$navy;
         font-size: 18px;
         font-weight: 800;
     }
 
     &__text {
-        color: #647196;
+        color: vars.$grey-dark;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: vars.$regular;
+        margin-bottom: 15px;
     }
 
     &__tag {
@@ -42,11 +45,11 @@
         & span {
             display: inline-block;
             margin-left: 5px;
-            color: #3A4374;
+            color: vars.$navy;
         }
     }
 
-    &__bottom {
+    &__secondary{
         display: flex;
         justify-content: space-between;
     }
@@ -58,11 +61,15 @@
         &-number {
             display: inline-block;
             margin-left: 10px;
-            color: #3A4374;
+            color: vars.$navy;
             font-size: 16px;
-            font-weight: 800;
+            font-weight: vars.$bold;
         }
     }
 
-    
+    &__control {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
 }
