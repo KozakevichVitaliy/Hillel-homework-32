@@ -37,5 +37,11 @@
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 15px;
         }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
     }
 }

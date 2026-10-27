@@ -23,7 +23,7 @@
         </svg>
         Go Back
       </a>
-      <form class="new-task__form form" type="submit">
+      <form class="new-task__form form" id="new-task" type="submit">
         <h3 class="form__title">Create New Task</h3>
         <div class="form__input-area">
           <label for="title" class="form__label">
@@ -48,7 +48,7 @@
             <span class="form__label-primary">Status</span>
             <span class="form__label-secondary">Change task state</span>
           </label>
-          <select name="status" required id="status"></select>>
+          <select name="status" required id="status">
             <option value="planned">Planned</option>
             <option value="progress">In-Progress</option>
             <option value="done">Done</option>
@@ -59,7 +59,7 @@
             <span class="form__label-primary">Task Detail</span>
             <span class="form__label-secondary">Include any specific comments on what should be improved, done, etc.</span>
           </label>
-          <input type="text" name="detail" required id="detail">>
+          <input type="text" name="detail" required id="detail">
         </div>
         <div class="form__button">
           <button class="form__button button-cancel">Cancel</button>
@@ -68,6 +68,6 @@
       </form>
     </div>
   </div>
-  <script src="./main.js"></script>
+  <script src="./scripts/postTask.js"></script>
 </body>
 <html
