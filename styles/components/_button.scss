@@ -32,4 +32,13 @@ button {
             background-color: vars.$navy-hover;
         }
     }
+
+    &.button-add {
+        background-color: vars.$purple;
+
+        &:hover {
+            background-color: vars.$purple-hover;
+        }
+    }
+
 }

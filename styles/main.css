@@ -95,12 +95,15 @@ body {
 
 .goback {
   display: block;
-  font-weight: 700;
-  color: #F2F4FF;
+  font-size: 14px;
+  font-weight: 800;
+  color: #647196;
   text-decoration: none;
 }
+.goback__icon {
+  display: inline-block;
+}
 .goback--white {
-  font-size: 14px;
   color: #ffffff;
 }
 .goback:hover {
@@ -131,9 +134,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-.toolbar__title-icon {
-  display: inline-block;
 }
 .toolbar__title-text {
   font-weight: 800;
@@ -230,6 +230,12 @@ button.button-cancel {
 }
 button.button-cancel:hover {
   background-color: #656EA3;
+}
+button.button-add {
+  background-color: #AD1FEA;
+}
+button.button-add:hover {
+  background-color: #C75AF6;
 }
 
 .form {
@@ -376,12 +382,6 @@ button.button-cancel:hover {
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 30px;
-}
-.board__toolbar-button {
-  background-color: #AD1FEA;
-}
-.board__toolbar-button:hover {
-  background-color: #C75AF6;
 }
 .board__content {
   padding: 0 10px;

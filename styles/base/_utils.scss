@@ -15,12 +15,16 @@
 
 .goback {
     display: block;
-    font-weight: 700;
-    color: vars.$grey;
+    font-size: 14px;
+    font-weight: vars.$bold;
+    color: vars.$grey-dark;
     text-decoration: none;
 
+    &__icon {
+        display: inline-block;
+    }
+
     &--white {
-        font-size: 14px;
         color: vars.$white;
     }
 

@@ -17,58 +17,53 @@
 <body>
   <div class="container">
     <div class="form-container">
-      <a href="#" class="goback">
-        <svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="detail__back-icon">
+      <a href="/" class="goback">
+        <svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="goback__icon">
           <path d="M4 8.70703L0 4.70703L4 0.707031" stroke-width="2" stroke="#4661E6"/>
         </svg>
         Go Back
       </a>
-      <form action="" class="new-feedback__form form" type="submit">
-        <h3 class="form__title">Editing ‘Add a dark theme option’</h3>
+      <form class="new-task__form form" type="submit">
+        <h3 class="form__title">Create New Task</h3>
         <div class="form__input-area">
           <label for="title" class="form__label">
-            <span class="form__label-primary">Feedback Title</span>
+            <span class="form__label-primary">Task Title</span>
             <span class="form__label-secondary">Add a short, descriptive headline</span>
           </label>
-          <input type="text" name="title" required>
+          <input type="text" name="title" id="title" required>
         </div>
         <div class="form__input-area">
-          <label for="category" class="form__label">
-            <span class="form__label-primary">Category</span>
-            <span class="form__label-secondary">Choose a category for your feedback</span>
+          <label for="urgency" class="form__label">
+            <span class="form__label-primary">Urgency</span>
+            <span class="form__label-secondary">Choose urgency for your feedback</span>
           </label>
-          <select name="category" required>
-            <option value="all">All</option>
-            <option value="bug">Bug</option>
-            <option value="feature">Feature</option>
-            <option value="ui">UI</option>
-            <option value="ux">UX</option>
-            <option value="enhancement">Enhancement</option>
+          <select name="urgency" required id="urgency">
+            <option value="urgent">Urgent</option>
+            <option value="not-urgent">Not urgent </option>
+            <option value="feature">For the feature</option>
           </select>
         </div>
         <div class="form__input-area">
-          <label for="category" class="form__label">
-            <span class="form__label-primary">Update Status</span>
-            <span class="form__label-secondary">Change feature state</span>
+          <label for="status" class="form__label">
+            <span class="form__label-primary">Status</span>
+            <span class="form__label-secondary">Change task state</span>
           </label>
-          <select name="category" required>
-            <option value="all">Suggestion</option>
-            <option value="bug">Planned</option>
-            <option value="feature">In-Progress</option>
-            <option value="ui">Live</option>
+          <select name="status" required id="status"></select>>
+            <option value="planned">Planned</option>
+            <option value="progress">In-Progress</option>
+            <option value="done">Done</option>
           </select>
         </div>
         <div class="form__input-area">
           <label for="detail" class="form__label">
-            <span class="form__label-primary">Feedback Detail</span>
-            <span class="form__label-secondary">Include any specific comments on what should be improved, added, etc.</span>
+            <span class="form__label-primary">Task Detail</span>
+            <span class="form__label-secondary">Include any specific comments on what should be improved, done, etc.</span>
           </label>
-          <input type="text" name="detail" required>
+          <input type="text" name="detail" required id="detail">>
         </div>
         <div class="form__button">
-          <button class="form__button-delete">Delete</button>
-          <button class="form__button-cancel">Cancel</button>
-          <button type="submit" class="form__button-add">Add Feedback</button>
+          <button class="form__button button-cancel">Cancel</button>
+          <button type="submit" class="form__button button-add">Add Task</button>
         </div>
       </form>
     </div>
