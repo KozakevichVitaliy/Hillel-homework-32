@@ -1,3 +1,5 @@
+@use "./variables" as vars;
+
 .hide-tablet {
     display: block;
 
@@ -14,27 +16,15 @@
 .goback {
     display: block;
     font-weight: 700;
-    color: #647196;
+    color: vars.$grey-dark;
     text-decoration: none;
 
     &--white {
         font-size: 14px;
-        color: #ffffff;
+        color: vars.$white;
     }
-
+    
     &:hover {
         text-decoration: underline;
     }
-}
-
-.progress {
-    background-color: #F49F85;
-}
-
-.planned {
-    background-color: #AD1FEA;
-}
-
-.live {
-    background-color: #62BCFA;
 }

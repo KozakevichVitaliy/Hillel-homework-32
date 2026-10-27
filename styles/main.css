@@ -107,27 +107,26 @@ body {
   text-decoration: underline;
 }
 
-.progress {
-  background-color: #F49F85;
-}
-
-.planned {
-  background-color: #AD1FEA;
-}
-
-.live {
-  background-color: #62BCFA;
-}
-
 .toolbar {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  padding: 15px 15px;
-  margin-bottom: 15px;
-  gap: 40px;
-  background-color: #373F68;
+  padding: 15px 25px;
+  background-color: #3A4374;
   border-radius: 10px;
+}
+.toolbar__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.toolbar__title-icon {
+  display: inline-block;
+}
+.toolbar__title-text {
+  font-weight: 800;
+  font-size: 24px;
+  color: #ffffff;
 }
 
 .tag {
@@ -338,16 +337,13 @@ button {
   display: block;
 }
 
-.roadmap__toolbar {
-  display: grid;
-  grid-template-columns: 1fr auto;
+.board__toolbar-button {
+  background-color: #AD1FEA;
 }
-.roadmap__title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.board__toolbar-button:hover {
+  background-color: #C75AF6;
 }
-.roadmap__tasks {
+.board__tasks {
   margin-top: 15x;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

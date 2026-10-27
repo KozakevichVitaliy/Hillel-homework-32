@@ -1,13 +1,12 @@
-.roadmap {
-    &__toolbar {
-        display: grid;
-        grid-template-columns: 1fr auto;
-    }
+@use "../base/variables" as vars;
 
-    &__title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+.board {
+    &__toolbar-button {
+        background-color: vars.$purple;
+
+        &:hover {
+            background-color: vars.$purple-hover;
+        }
     }
 
     &__tasks {
