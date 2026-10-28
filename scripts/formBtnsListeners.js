@@ -45,6 +45,6 @@ form.addEventListener('submit', async (e) => {
     if (id) window.location.href = '/'; 
     form.reset();
 });
-cancelTaskBtn.addEventListener('click', () => window.location.href = window.location.origin)
+cancelTaskBtn.addEventListener('click', () => window.location.href = 'https://kozakevichvitaliy.github.io/Hillel-homework-32/')
 
 fillForm(modifyUrlParams())
