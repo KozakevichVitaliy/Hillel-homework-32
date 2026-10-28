@@ -5,7 +5,7 @@ const addTaskBtn = document.querySelector('.form__button.button-add');const canc
 
 function modifyFormLayout(title) {
     addTaskBtn.innerText = 'Update Task'
-    formTitle.innerText = ` Update '${title}'`
+    formTitle.innerText = ` Update '${title}' task`
 }
 
 function modifyUrlParams() {
@@ -16,24 +16,33 @@ function modifyUrlParams() {
     Object.keys(data).forEach(key => {
         data[key] = urlParams.get(key);
     })
+    modifyFormLayout(data.title)
     return data;
 }
 
 function fillForm(data) {
-  Object.keys(data).forEach(key => {
-    const formInput = document.querySelector(`[name="${key}"]`);
-    if (formInput) formInput.value = data[key];
-  });
+    if (!data) return;
+    Object.keys(data).forEach(key => {
+        const formInput = document.querySelector(`[name="${key}"]`);
+        if (formInput) formInput.value = data[key];
+    });
 }
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
     const formData = new FormData(form);
-    const { id } = modifyUrlParams();
-    const data = Object.fromEntries(formData.entries());
+    const data = modifyUrlParams();
+    const modifiedFormData = Object.fromEntries(formData.entries());
     let method = 'POST';
-    if (id) method = 'PUT'
-    await postUpdateTodo(method, data, id) 
+    let id;
+
+    if (data) {
+        method = 'PUT'
+        id = data.id
+    }
+    
+    await postUpdateTodo(method, modifiedFormData, id)
+    if (id) window.location.href = '/'; 
     form.reset();
 });
 cancelTaskBtn.addEventListener('click', () => window.location.href = '/')
