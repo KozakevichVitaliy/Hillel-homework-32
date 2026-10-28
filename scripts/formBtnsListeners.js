@@ -42,7 +42,7 @@ form.addEventListener('submit', async (e) => {
     }
 
     await postUpdateTodo(method, modifiedFormData, id)
-    if (id) window.location.href = '/'; 
+    if (id) window.location.href = 'https://kozakevichvitaliy.github.io/Hillel-homework-32/'; 
     form.reset();
 });
 cancelTaskBtn.addEventListener('click', () => window.location.href = 'https://kozakevichvitaliy.github.io/Hillel-homework-32/')
