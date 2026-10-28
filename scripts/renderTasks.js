@@ -4,10 +4,10 @@ const tasksDoneList = document.getElementById('tasks-done');
 const tasksPlannedCounter = document.getElementById('planned-counter');
 const tasksProgressCounter = document.getElementById('progress-counter');
 const tasksDoneCounter = document.getElementById('done-counter');
-
+let todosData;
 
 async function App() {
-    const todosData = await getTodos();
+    todosData = await getTodos();
     const filteredData = filterData(todosData);
     const { tasksPlanned, tasksProgress, tasksDone } = filteredData;
     

@@ -9,11 +9,3 @@ async function deleteTodo(id) {
         console.error("Сталася помилка під час завантаження:", error);
     }
 }
-
-tasksLists.addEventListener('click', (e) => {
-    if(e.target.classList.contains('button-delete')) { 
-        e.target.closest('li').remove();
-        // deleteTodo(e.target.closest('li').id);
-    }
-    renderStatusCounters()
-})
