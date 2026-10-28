@@ -40,11 +40,11 @@ form.addEventListener('submit', async (e) => {
         method = 'PUT'
         id = data.id
     }
-    
+
     await postUpdateTodo(method, modifiedFormData, id)
     if (id) window.location.href = '/'; 
     form.reset();
 });
-cancelTaskBtn.addEventListener('click', () => window.location.href = '/')
+cancelTaskBtn.addEventListener('click', () => window.location.href = window.location.origin)
 
 fillForm(modifyUrlParams())

@@ -95,7 +95,7 @@ function renderTasks(todosData, todosList) {
         `
         return card;
     });
-    todosList.insertAdjacentHTML('beforeend', todoElements.join(','));
+    todosList.insertAdjacentHTML('beforeend', todoElements.join(''));
 }
 
 App()
