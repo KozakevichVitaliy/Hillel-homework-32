@@ -390,7 +390,6 @@ button.button-add:hover {
   gap: 30px;
 }
 .board__content {
-  padding: 0 10px;
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 10px;
