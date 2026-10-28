@@ -1,16 +1,20 @@
-const taksPlannedList = document.getElementById('tasks-planned');
-const taksProgressList = document.getElementById('tasks-progress');
-const taksDoneList = document.getElementById('tasks-done');
+const tasksPlannedList = document.getElementById('tasks-planned');
+const tasksProgressList = document.getElementById('tasks-progress');
+const tasksDoneList = document.getElementById('tasks-done');
+const tasksPlannedCounter = document.getElementById('planned-counter');
+const tasksProgressCounter = document.getElementById('progress-counter');
+const tasksDoneCounter = document.getElementById('done-counter');
+
 
 async function App() {
     const todosData = await getTodos();
     const filteredData = filterData(todosData);
-    const { todosPlanned, todosProgress, todosDone } = filteredData;
+    const { tasksPlanned, tasksProgress, tasksDone } = filteredData;
     
-    renderTodos(todosPlanned, taksPlannedList);
-    renderTodos(todosProgress, taksProgressList);
-    renderTodos(todosDone, taksDoneList);
-    // renderDoneStatus()
+    renderTasks(tasksPlanned, tasksPlannedList);
+    renderTasks(tasksProgress, tasksProgressList);
+    renderTasks(tasksDone, tasksDoneList);
+    renderStatusCounters()
 }
 
 async function getTodos() {
@@ -26,32 +30,38 @@ async function getTodos() {
 function filterData(data) {
     if (!data.length) return;
 
-    const todosPlanned = [];
-    const todosProgress = [];
-    const todosDone = [];
-    data.forEach((todo) => {
-        switch (todo.status) {
+    const tasksPlanned = [];
+    const tasksProgress = [];
+    const tasksDone = [];
+    data.forEach((task) => {
+        switch (task.status) {
             case 'planned':
-                todosPlanned.push(todo)
+                tasksPlanned.push(task)
                 break;
             case 'progress':
-                todosProgress.push(todo)
+                tasksProgress.push(task)
                 break;
             case 'done':
-                todosDone.push(todo)
+                tasksDone.push(task)
                 break;
             default:
                 break;
         }
     });
     return {
-        todosPlanned,
-        todosProgress,
-        todosDone
+        tasksPlanned, 
+        tasksProgress, 
+        tasksDone 
     }
 }
 
-function renderTodos(todosData, todosList) {
+function renderStatusCounters() {
+    tasksPlannedCounter.innerText = tasksPlannedList.children.length;
+    tasksProgressCounter.innerText = tasksProgressList.children.length;
+    tasksDoneCounter.innerText = tasksDoneList.children.length;
+}
+
+function renderTasks(todosData, todosList) {
     const todoElements = todosData.map(({
         id,
         title,

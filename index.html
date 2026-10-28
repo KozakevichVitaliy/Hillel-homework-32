@@ -34,15 +34,15 @@
       <main class="board__content tasks">
         <div class="tasks__title">
           <div class="tasks__title-planned">
-            <h3 class="tasks__title-primary">Planned (<span id="planned-counter">2</span>)</h3>
+            <h3 class="tasks__title-primary"><span class="dot planned"></span>Planned (<span id="planned-counter">2</span>)</h3>
             <h4 class="tasks__title-secondary">Ideas prioritized for research</h4>
           </div>
           <div class="tasks__title-progress">
-            <h3 class="tasks__title-primary">In-Progress (<span id="progress-counter">3</span>)</h3>
+            <h3 class="tasks__title-primary"><span class="dot progress"></span>In-Progress (<span id="progress-counter">3</span>)</h3>
             <h4 class="tasks__title-secondary">Currently being developed</h4>
           </div>
           <div class="tasks__title-done">
-            <h3 class="tasks__title-primary">Done (<span id="done-counter">1</span>)</h3>
+            <h3 class="tasks__title-primary"><span class="dot done"></span>Done (<span id="done-counter">1</span>)</h3>
             <h4 class="tasks__title-secondary">Released features</h4>
           </div>
         </div>
@@ -57,6 +57,7 @@
       </main>
     </div>
   </div>
-  <script src="./scripts/getTasks.js"></script>
+  <script src="./scripts/renderTasks.js"></script>
+  <script src="./scripts/deleteTask.js"></script>
 </body>
 <html
